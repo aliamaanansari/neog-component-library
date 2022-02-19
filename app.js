@@ -14,6 +14,7 @@ const navOptions = {
     'Vertical/Horizontal cards',
   ],
   Image: ['responsive', 'Rounded'],
+  Input: ['Textbox', 'Validation and Error style'],
 }
 
 const createNavbar = () => {
