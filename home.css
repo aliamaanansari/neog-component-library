@@ -435,3 +435,134 @@ pre {
   background-color: #e26a6a;
   box-shadow: 8px 4px 10px #0e0c0c;
 }
+/* Cards */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.user-id-cards {
+  width: 500px;
+}
+.image {
+  height: 150px;
+  overflow: hidden;
+}
+.card-user-id {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  overflow: hidden;
+  border-radius: var(--s);
+  cursor: pointer;
+  box-shadow: 0 8px 16px 10px rgba(0, 0, 0, 0.2);
+}
+.card-user-id img {
+  width: 100%;
+  height: min-content;
+}
+.user-btn-1 {
+  background-color: #2185d0;
+  color: white;
+}
+.user-btn-2 {
+  background-color: #2185d0;
+  position: relative;
+  color: white;
+}
+.user-btn-div {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.user-btn-1:hover {
+  background-color: white;
+  color: #0e0c0c;
+}
+.user-btn-2:hover {
+  background-color: white;
+  color: #0e0c0c;
+}
+
+.card-description {
+  padding: 14px 16px;
+}
+.card-with-text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--s);
+  width: 10%;
+  cursor: pointer;
+  background-color: #f3e8e8;
+}
+
+.card-with-badge {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: var(--s);
+  width: 10%;
+  cursor: pointer;
+  background-color: #bee2e7;
+}
+.card-badge {
+  display: flex;
+  right: -10px;
+  top: 5px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 5px;
+  border-radius: 20%;
+  border: 1px solid white;
+  background: darkblue;
+  color: aliceblue;
+}
+.card-badge:hover {
+  background-color: white;
+  color: darkblue;
+  border-color: darkblue;
+}
+.card-with-dismiss {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--s);
+  background-color: #f5e3f4;
+
+  width: 10%;
+  cursor: pointer;
+}
+.close-cross {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  border: 2px solid black;
+}
+.close-cross:hover {
+  cursor: pointer;
+}
+.card-shadow {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--s);
+  background-color: #f5f1d2;
+  box-shadow: 0 8px 16px 10px rgba(0, 0, 0, 0.2);
+
+  width: 10%;
+  cursor: pointer;
+}
+
+.card-horizontal {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--s);
+  width: 40%;
+  height: 10%;
+  cursor: pointer;
+  background-color: #e8f3e8;
+}
