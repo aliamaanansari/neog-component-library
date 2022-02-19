@@ -220,3 +220,218 @@ pre {
 .badge-icon {
   font-size: var(--xxl);
 }
+/* button */
+
+.btn {
+  margin-left: var(--s);
+  background-color: #2185d0;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-primary-pri {
+  padding: 0.2rem;
+  font-size: var(--s);
+  color: #2185d0;
+  background-color: white;
+  border-color: #2185d0;
+  border-radius: 2px;
+}
+.btn-primary-pri:hover {
+  color: white;
+  background-color: #2185d0;
+}
+
+.btn-primary-sec {
+  padding: 0.3rem;
+  font-size: var(--m);
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+}
+.btn-primary-sec:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn-primary-pos {
+  padding: 0.5rem;
+  font-size: var(--l);
+  color: #21ba45;
+  background-color: white;
+  border-color: #21ba45;
+}
+.btn-primary-pos:hover {
+  color: white;
+  background-color: #21ba45;
+}
+
+.btn-primary-neg {
+  padding: 0.8rem;
+  font-size: var(--xl);
+  color: #db2828;
+  background-color: white;
+  border-color: #db2828;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+.btn-primary-neg:hover {
+  color: white;
+  background-color: #db2828;
+}
+
+/* Link-Button */
+
+.btn-link-sm {
+  background: none;
+  color: #2185d0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--s);
+}
+.btn-link-sm:hover {
+  text-decoration: underline;
+}
+.btn-link-md {
+  background: none;
+  color: #d09321;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--m);
+}
+.btn-link-md:hover {
+  text-decoration: underline;
+}
+.btn-link-lg {
+  background: none;
+  color: #21d030;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--l);
+}
+.btn-link-lg:hover {
+  text-decoration: underline;
+}
+.btn-link-xlg {
+  background: none;
+  color: #ce1160;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--xl);
+}
+.btn-link-xlg:hover {
+  text-decoration: underline;
+  background-color: #ce1160;
+  color: white;
+}
+
+/* Button Using Icon  */
+
+.btn-icon-sm {
+  padding: 8px;
+  border-radius: 50%;
+}
+.btn-icon-sm:hover {
+  background-color: white;
+  color: #2185d0;
+  border-color: #2185d0;
+}
+.btn-icon-md {
+  padding: var(--s);
+  font-size: var(--m);
+  border-radius: 50%;
+}
+.btn-icon-md:hover {
+  background-color: white;
+  color: #2185d0;
+  border-color: #2185d0;
+}
+.btn-icon-lg {
+  padding: var(--m);
+  font-size: var(--l);
+  border-radius: 50%;
+}
+.btn-icon-lg:hover {
+  background-color: white;
+  color: #2185d0;
+  border-color: #2185d0;
+}
+.btn-icon-xlg {
+  padding: var(--l);
+  font-size: var(--xl);
+  border-radius: 50%;
+}
+.btn-icon-xlg:hover {
+  background-color: white;
+  color: #2185d0;
+  border-color: #2185d0;
+}
+
+/* Floating Button  */
+
+.btn-floating-sm {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 50%;
+  border-radius: 100%;
+  background: #2185d0;
+  box-shadow: 10px 10px 5px #2185d0;
+}
+.btn-floating-sm:hover {
+  color: black;
+  background-color: #4593cf;
+}
+
+.btn-floating-md {
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  border-color: black;
+  border-radius: 100%;
+  background: #d07e21;
+  box-shadow: 10px 10px 5px #080f14;
+}
+.btn-floating-md:hover {
+  color: black;
+  background-color: #ffbe73;
+}
+.btn-floating-lg {
+  position: fixed;
+  bottom: 50px;
+  right: 200px;
+  width: 60px;
+  height: 60px;
+  border-color: black;
+  border-radius: 100%;
+  background: #35a01b;
+  box-shadow: 10px 10px 5px #76c97d;
+}
+.btn-floating-lg:hover {
+  color: black;
+  background-color: #3caf1f;
+}
+.btn-floating-xlg {
+  position: fixed;
+  bottom: 50px;
+  right: 300px;
+  width: 70px;
+  height: 70px;
+  transition: 1s;
+  border-radius: 100%;
+  background: #cc1515;
+}
+.btn-floating-xlg:hover {
+  color: black;
+  background-color: #e26a6a;
+  box-shadow: 8px 4px 10px #0e0c0c;
+}

@@ -4,6 +4,7 @@ const navOptions = {
   Avatar: ['large', 'medium', 'small'],
   Alert: ['error', 'info', 'warning ', 'success'],
   Badge: ['Badge on Avatars', 'Badge on Icons '],
+  Button: ['Primary', 'Link', 'Icon Button', 'Floating Action Button'],
 }
 
 const createNavbar = () => {
