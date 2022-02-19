@@ -1,0 +1,6 @@
+:root {
+  --error-bg: rgb(254, 215, 215);
+  --success-bg: rgb(198, 246, 213);
+  --warning-bg: rgb(254, 235, 200);
+  --info-bg: rgb(190, 227, 248);
+}
