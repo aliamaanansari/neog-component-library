@@ -566,3 +566,40 @@ pre {
   cursor: pointer;
   background-color: #e8f3e8;
 }
+/* Images  */
+.img-container {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  gap: 1rem;
+}
+/* .img-res-parent {
+  width: 10px;
+  height: 10px;
+} */
+.img-responsive {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.rounded-xs {
+  border-radius: var(--xs);
+}
+.rounded-s {
+  border-radius: var(--s);
+}
+.rounded-m {
+  border-radius: var(--m);
+}
+.rounded-l {
+  border-radius: var(--l);
+}
+.rounded-xl {
+  border-radius: var(--xl);
+}
+.rounded-xxl {
+  border-radius: var(--xxl);
+}

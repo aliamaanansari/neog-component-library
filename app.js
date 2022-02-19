@@ -13,6 +13,7 @@ const navOptions = {
     'Cards with shadow',
     'Vertical/Horizontal cards',
   ],
+  Image: ['responsive', 'Rounded'],
 }
 
 const createNavbar = () => {
