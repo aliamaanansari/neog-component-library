@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="/styles/spacing.css" />
+    <link rel="stylesheet" href="/styles/colors.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <p><button>Home</button> <button>Docs</button></p>
+    </nav>
+    <div class="main-div">
+      <div class="side-bar">
+        <!-- will be handled by js -->
+      </div>
+      <div class="mid-div">
+        <hr />
+
+        <section class="parent-section">
+          <h1>Avatar :-</h1>
+          <div class="avatar-container">
+            <div class="avatar box-xxl">
+              <img src="/assets/images/user1.jpg" alt="" />
+            </div>
+            <div class="avatar box-xxl">K T</div>
+            <div class="avatar box-xxl">
+              <img src="/assets/images/user2.webp" alt="" />
+            </div>
+          </div>
+          <p>Avatar: The image that represents the user.</p>
+          <p>The Avatar component comes in different sizes -</p>
+          <h3>Large -</h3>
+          <div id="large-Avatar" class="avatar-container">
+            <div class="avatar box-xxl">
+              <img src="/assets/images/user1.jpg" alt="" />
+            </div>
+            <div class="avatar box-xxl">K T</div>
+            <div class="avatar box-xxl">
+              <img src="/assets/images/user2.webp" alt="" />
+            </div>
+          </div>
+          <pre class="avatar-code">
+      &lt;div class=&quot;avatar box-xxl&quot;&gt;
+              &lt;img src=&quot;/assets/images/user1.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;avatar box-xxl&quot;&gt;K T&lt;/div&gt;
+            &lt;div class=&quot;avatar box-xxl&quot;&gt;
+              &lt;img src=&quot;/assets/images/user2.webp&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;</pre
+          >
+
+          <h3>Medium -</h3>
+          <div id="medium-Avatar" class="avatar-container">
+            <div class="avatar box-xl">
+              <img src="/assets/images/user1.jpg" alt="" />
+            </div>
+            <div class="avatar box-xl">K T</div>
+            <div class="avatar box-xl">
+              <img src="/assets/images/user2.webp" alt="" />
+            </div>
+          </div>
+          <pre class="avatar-code">
+ &lt;div class=&quot;avatar box-xl&quot;&gt;
+    &lt;img src=&quot;/assets/images/user1.jpg&quot; alt=&quot;&quot; /&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;avatar box-xl&quot;&gt;
+  K T
+ &lt;/div&gt;
+ &lt;div class=&quot;avatar box-xl&quot;&gt;
+  &lt;img src=&quot;/assets/images/user2.webp&quot; alt=&quot;&quot; /&gt;
+ &lt;/div&gt;</pre
+          >
+          <h3>Small -</h3>
+
+          <div id="small-Avatar" class="avatar-container">
+            <div class="avatar box-m">
+              <img src="/assets/images/user1.jpg" alt="" />
+            </div>
+            <div class="avatar box-m">K T</div>
+            <div class="avatar box-m">
+              <img src="/assets/images/user2.webp" alt="" />
+            </div>
+          </div>
+          <pre class="avatar-code">
+ &lt;div class=&quot;avatar box-m&quot;&gt;
+     &lt;img src=&quot;/assets/images/user1.jpg&quot; alt=&quot;&quot; /&gt;
+ &lt;/div&gt;
+&lt;div class=&quot;avatar box-m&quot;&gt;K T&lt;/div&gt;
+&lt;div class=&quot;avatar box-m&quot;&gt;
+  &lt;img src=&quot;/assets/images/user2.webp&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+          </pre>
+        </section>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
