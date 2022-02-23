@@ -4,6 +4,17 @@ const navOptions = {
   Avatar: ['large', 'medium', 'small'],
   Alert: ['error', 'info', 'warning ', 'success'],
   Badge: ['Badge on Avatars', 'Badge on Icons '],
+  Button: ['Primary', 'Link', 'Icon Button', 'Floating Action Button'],
+  Cards: [
+    'Cards with text overlay',
+    'Text only cards',
+    'Cards with badges',
+    'Cards with dismiss',
+    'Cards with shadow',
+    'Vertical/Horizontal cards',
+  ],
+  Image: ['responsive', 'Rounded'],
+  Input: ['Textbox', 'Validation and Error style'],
   Navbar: ['Navbar'],
 }
 
