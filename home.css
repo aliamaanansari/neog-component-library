@@ -170,4 +170,53 @@ pre {
   background-color: var(--success-bg);
   color: black;
 }
-  
+/* Badge */
+
+.badge-wrapper {
+  width: max-content;
+  position: relative;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: var(--s);
+  height: var(--s);
+  border-radius: 50%;
+  border: 1px solid white;
+  background: cyan;
+  color: aliceblue;
+}
+.badge-active {
+  background: lightskyblue;
+}
+.badge-inactive {
+  background: red;
+}
+.badge-idle {
+  background: orange;
+}
+
+/* Badge-position */
+.bottom-right {
+  bottom: 0;
+  right: -10px;
+}
+.bottom-left {
+  bottom: 0;
+  left: -10px;
+}
+.top-right {
+  top: 0;
+  right: -10px;
+}
+.top-left {
+  top: 0;
+  left: -10px;
+}
+
+.badge-icon {
+  font-size: var(--xxl);
+}
