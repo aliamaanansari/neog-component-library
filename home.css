@@ -179,4 +179,99 @@ pre {
 }
 .navbar-right-options label {
   margin-left: 0.5rem;
+/* Alert */
+
+.alert {
+  border-radius: var(--xs);
+  margin-bottom: var(--xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--s);
+}
+.alert-icon {
+  font-size: var(--m);
+  margin-right: var(--s);
+}
+.alert-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: var(--m);
+}
+
+.alert-container {
+  max-width: 500px;
+}
+
+.cross-icon {
+  cursor: pointer;
+}
+
+.alert-error {
+  background-color: var(--error-bg);
+  color: black;
+}
+.alert-info {
+  background-color: var(--info-bg);
+  color: black;
+}
+.alert-warning {
+  background-color: var(--warning-bg);
+  color: black;
+}
+.alert-success {
+  background-color: var(--success-bg);
+  color: black;
+}
+/* Badge */
+
+.badge-wrapper {
+  width: max-content;
+  position: relative;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: var(--s);
+  height: var(--s);
+  border-radius: 50%;
+  border: 1px solid white;
+  background: cyan;
+  color: aliceblue;
+}
+.badge-active {
+  background: lightskyblue;
+}
+.badge-inactive {
+  background: red;
+}
+.badge-idle {
+  background: orange;
+}
+
+/* Badge-position */
+.bottom-right {
+  bottom: 0;
+  right: -10px;
+}
+.bottom-left {
+  bottom: 0;
+  left: -10px;
+}
+.top-right {
+  top: 0;
+  right: -10px;
+}
+.top-left {
+  top: 0;
+  left: -10px;
+}
+
+.badge-icon {
+  font-size: var(--xxl);
 }
