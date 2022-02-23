@@ -2,6 +2,7 @@ const sideBar = document.querySelector('.side-bar')
 
 const navOptions = {
   Avatar: ['large', 'medium', 'small'],
+  Navbar: ['Navbar'],
 }
 
 const createNavbar = () => {
