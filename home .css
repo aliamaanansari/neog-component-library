@@ -17,7 +17,6 @@ pre {
   padding: 0;
   margin: 0;
 }
-
 .nav-bar {
   top: 0;
   position: fixed;
@@ -51,7 +50,6 @@ pre {
 }
 .mid-div {
   width: 80%;
-  padding: 0 10rem;
   overflow-y: auto;
   height: calc(100vh - 5rem);
 }
@@ -104,7 +102,6 @@ pre {
 .box-m {
   width: var(--m);
   height: var(--m);
-  font-size: var(--xs);
 }
 .box-l {
   width: var(--l);
@@ -121,64 +118,8 @@ pre {
 .avatar-code {
   background-color: rgb(1, 22, 39);
   height: 100px;
-  overflow-y: auto;
   color: white;
 }
-
-/* .navbar  */
-
-.navbar-container {
-  width: 80%;
-}
-
-.navbar {
-  padding: 0 8.3%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
-}
-
-.navbar-title {
-  font-weight: bold;
-  font-size: var(--s);
-  color: var(--gray-light);
-}
-
-.navbar-search-input {
-  background: #ffffff;
-  border: 1px solid #9a9a9a;
-  border-radius: 5px;
-  color: var(--dark-gray);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1rem;
-  padding: 0.5rem 0.5rem 0.5rem 3.5rem;
-}
-.navbar-search-input-container {
-  position: relative;
-}
-.input-lefticon {
-  position: absolute;
-  left: 0.5rem;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-
-.navbar-right-options {
-  display: flex;
-  align-items: center;
-  width: max-content;
-  justify-content: space-between;
-  color: var(--gray-light);
-  font-weight: bold;
-}
-.navbar-right-options div {
-  margin-left: 1rem;
-}
-.navbar-right-options label {
-  margin-left: 0.5rem;
 /* Alert */
 
 .alert {
@@ -225,56 +166,57 @@ pre {
   background-color: var(--success-bg);
   color: black;
 }
-/* Badge */
+  /* Badge */
 
-.badge-wrapper {
-  width: max-content;
-  position: relative;
-}
+  .badge-wrapper {
+    width: max-content;
+    position: relative;
+  }
 
-.badge {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: var(--s);
-  height: var(--s);
-  border-radius: 50%;
-  border: 1px solid white;
-  background: cyan;
-  color: aliceblue;
-}
-.badge-active {
-  background: lightskyblue;
-}
-.badge-inactive {
-  background: red;
-}
-.badge-idle {
-  background: orange;
-}
+  .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: var(--s);
+    height: var(--s);
+    border-radius: 50%;
+    border: 1px solid white;
+    background: cyan;
+    color: aliceblue;
+  }
+  .badge-active {
+    background: lightskyblue;
+  }
+  .badge-inactive {
+    background: red;
+  }
+  .badge-idle {
+    background: orange;
+  }
 
-/* Badge-position */
-.bottom-right {
-  bottom: 0;
-  right: -10px;
-}
-.bottom-left {
-  bottom: 0;
-  left: -10px;
-}
-.top-right {
-  top: 0;
-  right: -10px;
-}
-.top-left {
-  top: 0;
-  left: -10px;
-}
+  /* Badge-position */
+  .bottom-right {
+    bottom: 0;
+    right: -10px;
+  }
+  .bottom-left {
+    bottom: 0;
+    left: -10px;
+  }
+  .top-right {
+    top: 0;
+    right: -10px;
+  }
+  .top-left {
+    top: 0;
+    left: -10px;
+  }
 
-.badge-icon {
-  font-size: var(--xxl);
-}
+  .badge-icon {
+    font-size: var(--xxl);
+  }
+
 /* button */
 
 .btn {
@@ -621,6 +563,7 @@ pre {
   cursor: pointer;
   background-color: #e8f3e8;
 }
+
 /* Images  */
 .img-container {
   display: flex;
@@ -658,6 +601,7 @@ pre {
 .rounded-xxl {
   border-radius: var(--xxl);
 }
+
 /* Input */
 .input-container {
   display: flex;

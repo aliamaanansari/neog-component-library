@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="/styles/spacing.css" />
+    <link rel="stylesheet" href="/styles/colors.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <p><button>Home</button> <button>Docs</button></p>
+    </nav>
+    <div class="main-div">
+      <div class="side-bar">
+        <!-- will be handled by js -->
+      </div>
+      <div class="mid-div">
+        <hr />
+
+        <section  class="parent-section">
+          <h1>Avatar :-</h1>
+          <div  class="avatar-container">
+            <div   class="avatar box-xxl">
+              <img src="/assets/images/user1.jpg" alt="" />
+            </div>
+            <div class="avatar box-xxl">K T</div>
+            <div class="avatar box-xxl">
+              <img src="/assets/images/user2.webp" alt="" />
+            </div>
+          </div>
+          <p>Avatar: The image that represents the user.</p>
+          <p>The Avatar component comes in different sizes -</p>
+          <h3>Large -</h3>
+          <div id="large-Avatar" class="avatar-container">
+            <div class="avatar box-xxl">
+              <img src="/assets/images/user1.jpg" alt="" />
+            </div>
+            <div class="avatar box-xxl">K T</div>
+            <div class="avatar box-xxl">
+              <img src="/assets/images/user2.webp" alt="" />
+            </div>
+          </div>
+          <div class="avatar-code">this area is for code</div>
+          <h3>Medium -</h3>
+          <div  id="medium-Avatar"class="avatar-container">
+            <div class="avatar box-xl">
+              <img src="/assets/images/user1.jpg" alt="" />
+            </div>
+            <div class="avatar box-xl">K T</div>
+            <div class="avatar box-xl">
+              <img src="/assets/images/user2.webp" alt="" />
+            </div>
+          </div>
+          <div class="avatar-code">this area is for code</div>
+          <h3>Small -</h3>
+
+          <div id="small-Avatar" class="avatar-container">
+            <div class="avatar box-m">
+              <img src="/assets/images/user1.jpg" alt="" />
+            </div>
+            <div class="box-m">K T</div>
+            <div class="avatar box-m">
+              <img src="/assets/images/user2.webp" alt="" />
+            </div>
+          </div>
+          <div class="avatar-code">this area is for code</div>
+        </section>
+        <hr />
+
+        <section  class="parent-section">
+          <h1>Alert :-</h1>
+          <p>
+            Alerts are used to communicate a state that affects a system,
+            feature or page.
+          </p>
+          <div class="alert alert-success">
+            <div class="alert-content">
+              <div class="alert-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div>
+                Application submitted! Thanks for submitting your application.
+                Our team will get back to you soon.
+              </div>
+            </div>
+            <div class="cross-icon"><i class="fas fa-times"></i></div>
+          </div>
+          <h3><b> Status -</b></h3>
+          <p>Change the status of the alerts by passing the status prop.</p>
+          <h4 id="error-Alert">Error:</h4>
+          <div class="alert-container">
+            <div class="alert alert-error">
+              <div class="alert-content">
+                <div class="alert-icon">
+                  <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div>There was an error processing your request</div>
+              </div>
+              <div class="cross-icon"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="avatar-code">this area is for code</div>
+
+            <h4 id="warning--Alert">Warning:</h4>
+
+            <div class="alert alert-warning">
+              <div class="alert-content">
+                <div class="alert-icon">
+                  <i class="fas fa-skull-crossbones"></i>
+                </div>
+                <div>Seems your account is about expire, upgrade now</div>
+              </div>
+              <div class="cross-icon"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="avatar-code">this area is for code</div>
+
+            <h4 id="success-Alert">Success:</h4>
+
+            <div class="alert alert-success">
+              <div class="alert-content">
+                <div class="alert-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <div>Data uploaded to the server. Fire on!</div>
+              </div>
+              <div class="cross-icon"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="avatar-code">this area is for code</div>
+
+            <h4 id="info-Alert">Info:</h4>
+
+            <div class="alert alert-info">
+              <div class="alert-content">
+                <div class="alert-icon"><i class="fas fa-question"></i></div>
+                <div>Information will be Updated Soon!, Stay Active!</div>
+              </div>
+              <div class="cross-icon"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="avatar-code">this area is for code</div>
+          </div>
+        </section>
+        <hr />
+
+        <section class="parent-section">
+          <div class="badge-container">
+            <h1>Badge :-</h1>
+            <p>
+              Badges are used to highlight an item's status for quick
+              recognition.
+            </p>
+            <div class="badge-wrapper">
+              <div class="badge badge-active top-right"></div>
+              <div class="avatar box-xxl">
+                <img src="/assets/images/user1.jpg" alt="" />
+              </div>
+            </div>
+
+            <h3 id="Badge-on-Avatars-Badge">Badges on Avatar -</h3>
+            <h4>Active:</h4>
+            <div class="badge-wrapper">
+              <div class="badge badge-active"></div>
+              <div class="avatar box-xxl">
+                <img src="/assets/images/user1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="avatar-code">this area is for code</div>
+
+            <h4>Inactive/Away:</h4>
+            <div class="badge-wrapper">
+              <div class="badge badge-inactive top-right">a</div>
+              <div class="avatar box-xxl">
+                <img src="/assets/images/user1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="avatar-code">this area is for code</div>
+
+            <h4>Idle:</h4>
+            <div class="badge-wrapper">
+              <div class="badge badge-idle bottom-left"></div>
+              <div class="avatar box-xxl">
+                <img src="/assets/images/user1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="avatar-code">this area is for code</div>
+
+            <h3 id="Badge-on-Avatars-Badge">Badges on Icon -</h3>
+            <div class="badge-wrapper">
+              <div class="badge badge-idle bottom-right"></div>
+              <div class="badge-icon">
+                <i class="fas fa-exclamation-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="avatar-code">this area is for code</div>
+        </section>
+        <hr />
+
+        <section class="parent-section">
+          <h1>Button :-</h1>
+          <p>
+            The Button component is used to trigger an action or event, such as
+            submitting a form, opening a dialog, canceling an action, or
+            performing a delete operation.
+          </p>
+          <div class="button-container">
+            <h4 id="Primary-Button">Primary Button:</h4>
+            <button class="btn btn-primary-pri">Primary</button>
+            <button class="btn btn-primary-sec">Secondary</button>
+            <button class="btn btn-primary-pos">Positive</button>
+            <button class="btn btn-primary-neg">Negative</button>
+            <div class="avatar-code">this area is for code</div>
+
+            <h4 id="Link-Button">Link Button:</h4>
+            <button class="btn btn-link-sm">Button</button>
+            <button class="btn btn-link-md">Button</button>
+            <button class="btn btn-link-lg">Button</button>
+            <button class="btn btn-link-xlg">Button</button>
+            <div class="avatar-code">this area is for code</div>
+
+            <h4 id="Icon-Button-Button">Buttons Using Icon:</h4>
+            <button class="btn btn-icon-sm"><i class="fas fa-wifi"></i></button>
+            <button class="btn btn-icon-md"><i class="fas fa-sms"></i></button>
+            <button class="btn btn-icon-lg">
+              <i class="fas fa-ice-cream"></i>
+            </button>
+            <button class="btn btn-icon-xlg">
+              <i class="fas fa-gamepad"></i>
+            </button>
+            <div class="avatar-code">this area is for code</div>
+
+            <!-- Floating Button -->
+            <button class="btn btn-floating-sm">Button</button>
+            <button class="btn btn-floating-md">Button</button>
+            <button class="btn btn-floating-lg">Button</button>
+            <button class="btn btn-floating-xlg">Button</button>
+          </div>
+        </section>
+        <hr />
+        <section class="parent-section">
+          <h1 id="Cards-with-text-overlay-Cards">Cards :-</h1>
+          <p>
+            Cards are surfaces that display content and actions on a single
+            topic. They should be easy to scan for relevant and actionable
+            information. Elements, like text and images, should be placed on
+            them in a way that clearly indicates hierarchy.
+          </p>
+          <div class="cards-container">
+            <h4 id="Cards-with-text-overlay-Cards">Card with Textovelay:</h4>
+            <div class="user-id-cards">
+              <div class="card-user-id">
+                <div class="image">
+                  <img src="/assets/images/iron-man.jpg" />
+                </div>
+                <div class="card-description">
+                  <h3><b>Iron Man:</b></h3>
+
+                  <p>
+                    Tony Stark is charismatic and eccentric, he is also very
+                    proud, but also very altruist and heroic. He did not have a
+                    good childhood, and this affects how he acts. Stark is very
+                    smart, and a very talented inventor.
+                  </p>
+                  <div class="user-btn-div">
+                    <button class="user-btn-1">Like</button>
+                    <button class="user-btn-2">Share</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avatar-code">this area is for code</div>
+
+            <!-- card-with-text -->
+            <h4 id="Text-only-cards-Cards">Text Only Card</h4>
+            <div class="card card-with-text">
+              <div class="card-description">
+                <h2 class="card-title">Lorem Ipsum :-</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum,
+                </p>
+              </div>
+            </div>
+            <div class="avatar-code">this area is for code</div>
+
+            <!-- card-with-text --and-badge-->
+            <h4 id="Cards-with-badges-Cards">Card with Badge:</h4>
+            <div class="card card-with-badge">
+              <div class="card-badge">Offer</div>
+              <div class="card-description">
+                <h2 class="card-title">Lorem Ipsum :-</h2>
+                <p class="card-paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum,
+                </p>
+              </div>
+            </div>
+            <div class="avatar-code">this area is for code</div>
+
+            <!-- card-with-dismiss -->
+            <h4 id="Cards-with-dismiss-Cards">Card with Dismiss:</h4>
+            <div class="card card-with-dismiss">
+              <div class="close-cross">X</div>
+              <div class="card-description">
+                <h2 class="card-title">Lorem Ipsum :-</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum,
+                </p>
+              </div>
+            </div>
+            <div class="avatar-code">this area is for code</div>
+
+            <!-- Card With Shadow -->
+            <h4 id="Cards-with-shadow-Cards">Card with Shadow:</h4>
+
+            <div class="card card-shadow">
+              <div>
+                <h2 class="card-title">Lorem Ipsum :-</h2>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar-code">this area is for code</div>
+
+          <!-- Horizontal Card -->
+          <h4 id="Vertical/Horizontal-cards-Cards">Vertical/Horizontal cards:</h4>
+          <div class="card card-horizontal">
+            <div>
+              <h2 class="card-title">Lorem Ipsum :-</h2>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum, dolor nobis. Illum officia error, est libero, tempora
+                unde sed sunt accusantium nisi deserunt quae magni eligendi
+                tempore? Ut, nesciunt facere.
+              </p>
+            </div>
+          </div>
+          <div class="avatar-code">this area is for code</div>
+        </section>
+        <hr />
+<section id="responsive-Image" class="parent-section">
+        <!-- Images Using Html -->
+        <h1>Images :-</h1>
+        <div class="img-container">
+          <div  id="responsive-Image" class="img-res-parent">
+            <img class="img-responsive" src="/assets/images//img1.jpg" alt="" />
+          </div>
+          <div class="img-res-parent">
+            <img class="img-responsive" src="/assets/images//img1.jpg" alt="" />
+          </div>
+          <div class= img-res-parent">
+          <img class="img-responsive" src="/assets/images//img1.jpg" alt="" />
+        </div>
+      </div>
+      
+      </section>
+      <hr />
+      <section class="parent-section">
+        <!-- Input -->
+        <h3 id="Textbox-Input">Input -</h3>
+        <p>
+          The Input component is a component that is used to get user input in a
+          text field.
+        </p>
+        <div class="input-container">
+          <h4 id="Textbox-Input">Textbox:</h4>
+          <h4>Small:</h4>
+          <input class="input-small" type="text" />
+          <h4>Medium:</h4>
+
+          <input class="input-medium" type="text" />
+          <h4>Large:</h4>
+
+          <input class="input-large" type="text" />
+          <h4 id="Validation-and-Error-style-Input">Validation and errors style:</h4>
+
+          <input class="input-error" type="text" />
+          <p class="error-text">Your Input is not Valid</p>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

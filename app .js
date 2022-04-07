@@ -15,7 +15,6 @@ const navOptions = {
   ],
   Image: ['responsive', 'Rounded'],
   Input: ['Textbox', 'Validation and Error style'],
-  Navbar: ['Navbar'],
 }
 
 const createNavbar = () => {

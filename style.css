@@ -1,0 +1,490 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.avatar-container {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.avatar {
+  background-color: grey;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar img {
+  height: 100%;
+  width: 100%;
+}
+
+.box-xs {
+  width: var(--xs);
+  height: var(--xs);
+}
+.box-s {
+  width: var(--s);
+  height: var(--s);
+}
+.box-m {
+  width: var(--m);
+  height: var(--m);
+}
+.box-l {
+  width: var(--l);
+  height: var(--l);
+}
+.box-xl {
+  width: var(--xl);
+  height: var(--xl);
+}
+.box-xxl {
+  width: var(--xxl);
+  height: var(--xxl);
+}
+
+/* Alert */
+
+.alert {
+  border-radius: var(--xs);
+  margin-bottom: var(--xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--s);
+}
+.alert-icon {
+  font-size: var(--m);
+  margin-right: var(--s);
+}
+.alert-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: var(--m);
+}
+
+.alert-container {
+  max-width: 500px;
+}
+
+.cross-icon {
+  cursor: pointer;
+}
+
+.alert-error {
+  background-color: var(--error-bg);
+  color: black;
+}
+.alert-info {
+  background-color: var(--info-bg);
+  color: black;
+}
+.alert-warning {
+  background-color: var(--warning-bg);
+  color: black;
+}
+.alert-success {
+  background-color: var(--success-bg);
+  color: black;
+}
+
+.badge-wrapper {
+  width: max-content;
+  position: relative;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: var(--s);
+  height: var(--s);
+  border-radius: 50%;
+  border: 1px solid white;
+  background: cyan;
+  color: aliceblue;
+}
+.badge-active {
+  background: lightskyblue;
+}
+.badge-inactive {
+  background: red;
+}
+.badge-idle {
+  background: orange;
+}
+
+/* Badge-position */
+.bottom-right {
+  bottom: 0;
+  right: -10px;
+}
+.bottom-left {
+  bottom: 0;
+  left: -10px;
+}
+.top-right {
+  top: 0;
+  right: -10px;
+}
+.top-left {
+  top: 0;
+  left: -10px;
+}
+
+.badge-icon {
+  font-size: var(--xxl);
+}
+
+/* button */
+
+.btn {
+  margin-left: var(--s);
+  background-color: #2185d0;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-primary-pri {
+  padding: 0.2rem;
+  font-size: var(--s);
+  color: #2185d0;
+  background-color: white;
+  border-color: #2185d0;
+  border-radius: 2px;
+}
+.btn-primary-pri:hover {
+  color: white;
+  background-color: #2185d0;
+}
+
+.btn-primary-sec {
+  padding: 0.3rem;
+  font-size: var(--m);
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+}
+.btn-primary-sec:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn-primary-pos {
+  padding: 0.5rem;
+  font-size: var(--l);
+  color: #21ba45;
+  background-color: white;
+  border-color: #21ba45;
+}
+.btn-primary-pos:hover {
+  color: white;
+  background-color: #21ba45;
+}
+
+.btn-primary-neg {
+  padding: 0.8rem;
+  font-size: var(--xl);
+  color: #db2828;
+  background-color: white;
+  border-color: #db2828;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+.btn-primary-neg:hover {
+  color: white;
+  background-color: #db2828;
+}
+
+/* Link-Button */
+
+.btn-link-sm {
+  background: none;
+  color: #2185d0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--s);
+}
+.btn-link-sm:hover {
+  text-decoration: underline;
+}
+.btn-link-md {
+  background: none;
+  color: #d09321;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--m);
+}
+.btn-link-md:hover {
+  text-decoration: underline;
+}
+.btn-link-lg {
+  background: none;
+  color: #21d030;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--l);
+}
+.btn-link-lg:hover {
+  text-decoration: underline;
+}
+.btn-link-xlg {
+  background: none;
+  color: #ce1160;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--xl);
+}
+.btn-link-xlg:hover {
+  text-decoration: underline;
+  background-color: #ce1160;
+  color: white;
+}
+
+/* Button Using Icon  */
+
+.btn-icon-sm {
+  padding: 8px;
+  border-radius: 50%;
+}
+.btn-icon-sm:hover {
+  background-color: white;
+  color: #2185d0;
+  border-color: #2185d0;
+}
+.btn-icon-md {
+  padding: var(--s);
+  font-size: var(--m);
+  border-radius: 50%;
+}
+.btn-icon-md:hover {
+  background-color: white;
+  color: #2185d0;
+  border-color: #2185d0;
+}
+.btn-icon-lg {
+  padding: var(--m);
+  font-size: var(--l);
+  border-radius: 50%;
+}
+.btn-icon-lg:hover {
+  background-color: white;
+  color: #2185d0;
+  border-color: #2185d0;
+}
+.btn-icon-xlg {
+  padding: var(--l);
+  font-size: var(--xl);
+  border-radius: 50%;
+}
+.btn-icon-xlg:hover {
+  background-color: white;
+  color: #2185d0;
+  border-color: #2185d0;
+}
+
+/* Floating Button  */
+
+.btn-floating-sm {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 50%;
+  border-radius: 100%;
+  background: #2185d0;
+  box-shadow: 10px 10px 5px #2185d0;
+}
+.btn-floating-sm:hover {
+  color: black;
+  background-color: #4593cf;
+}
+
+.btn-floating-md {
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  border-color: black;
+  border-radius: 100%;
+  background: #d07e21;
+  box-shadow: 10px 10px 5px #080f14;
+}
+.btn-floating-md:hover {
+  color: black;
+  background-color: #ffbe73;
+}
+.btn-floating-lg {
+  position: fixed;
+  bottom: 50px;
+  right: 200px;
+  width: 60px;
+  height: 60px;
+  border-color: black;
+  border-radius: 100%;
+  background: #35a01b;
+  box-shadow: 10px 10px 5px #76c97d;
+}
+.btn-floating-lg:hover {
+  color: black;
+  background-color: #3caf1f;
+}
+.btn-floating-xlg {
+  position: fixed;
+  bottom: 50px;
+  right: 300px;
+  width: 70px;
+  height: 70px;
+  transition: 1s;
+  border-radius: 100%;
+  background: #cc1515;
+}
+.btn-floating-xlg:hover {
+  color: black;
+  background-color: #e26a6a;
+  box-shadow: 8px 4px 10px #0e0c0c;
+}
+
+/* Cards */
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.card-user-id {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--s);
+  cursor: pointer;
+  box-shadow: 0 8px 16px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-description {
+  padding: 2px 16px;
+}
+.card-with-text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--s);
+  width: 10%;
+  cursor: pointer;
+}
+
+.card-with-badge {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: var(--s);
+  width: 10%;
+  cursor: pointer;
+}
+.card-badge {
+  display: flex;
+  right: -10px;
+  top: 5px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 5px;
+  border-radius: 20%;
+  border: 1px solid white;
+  background: darkblue;
+  color: aliceblue;
+}
+.card-badge:hover {
+  background-color: white;
+  color: darkblue;
+  border-color: darkblue;
+}
+.card-with-dismiss {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--s);
+
+  width: 10%;
+  cursor: pointer;
+}
+.close-cross {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  border: 2px solid black;
+}
+.close-cross:hover {
+  cursor: pointer;
+}
+.card-shadow {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--s);
+
+  width: 10%;
+  cursor: pointer;
+}
+.card-shadow:hover {
+  box-shadow: 0 8px 16px 10px rgba(0, 0, 0, 0.2);
+}
+.card-horizontal {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--s);
+  width: 40%;
+  height: 10%;
+  cursor: pointer;
+}
+
+/* Images  */
+.img-container {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+/* .img-res-parent {
+  width: 10px;
+  height: 10px;
+} */
+.img-responsive {
+  width: 100%;
+  height: 100%;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.rounded-xs {
+  border-radius: var(--xs);
+}
+.rounded-s {
+  border-radius: var(--s);
+}
+.rounded-m {
+  border-radius: var(--m);
+}
+.rounded-l {
+  border-radius: var(--l);
+}
+.rounded-xl {
+  border-radius: var(--xl);
+}
+.rounded-xxl {
+  border-radius: var(--xxl);
+}
