@@ -119,6 +119,7 @@ pre {
   background-color: rgb(1, 22, 39);
   height: 100px;
   color: white;
+  overflow-y: auto;
 }
 
 
