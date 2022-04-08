@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Component Library</title>
+    <title>NeogCamp Component Library</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="/styles/spacing.css" />
+    <link rel="stylesheet" href="/styles/colors.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -12,220 +19,627 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/styles/colors.css" />
-    <link rel="stylesheet" href="/styles/spacing.css" />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Avatar :-</h1>
-    <div class="avatar-container">
-      <div class="avatar box-xxl">
-        <img src="/assets/images/user1.jpg" alt="" />
+    <nav class="nav-bar">
+      <p><button>Home</button> <button>Docs</button></p>
+    </nav>
+    <div class="main-div">
+      <div class="side-bar">
+        <!-- will be handled by js -->
       </div>
-      <div class="avatar box-xxl">K T</div>
-      <div class="avatar box-xxl">
-        <img src="/assets/images/user2.webp" alt="" />
-      </div>
-    </div>
-    <div class="avatar-container">
-      <div class="avatar box-xl">
-        <img src="/assets/images/user1.jpg" alt="" />
-      </div>
-      <div class="avatar box-xl">K T</div>
-      <div class="avatar box-xl">
-        <img src="/assets/images/user2.webp" alt="" />
-      </div>
-    </div>
-    <div class="avatar-container">
-      <div class="avatar box-m">
-        <img src="/assets/images/user1.jpg" alt="" />
-      </div>
-      <div class="box-m">K T</div>
-      <div class="avatar box-m">
-        <img src="/assets/images/user2.webp" alt="" />
-      </div>
-    </div>
+      <div class="mid-div">
+        <hr />
 
-    <h1>Alert :-</h1>
-    <div class="alert-container">
-      <div class="alert alert-error">
-        <div class="alert-content">
-          <div class="alert-icon">
-            <i class="fas fa-exclamation-circle"></i>
+        <section class="parent-section">
+          <h1>Avatar :-</h1>
+          <div class="avatar-container">
+            <div class="avatar box-xxl">
+              <img src="/assets/images/user1.jpg" alt="" />
+            </div>
+            <div class="avatar box-xxl">K T</div>
+            <div class="avatar box-xxl">
+              <img src="/assets/images/user2.webp" alt="" />
+            </div>
           </div>
-          <div>There was an error processing your request</div>
-        </div>
-        <div class="cross-icon"><i class="fas fa-times"></i></div>
-      </div>
+          <p>Avatar: The image that represents the user.</p>
+          <p>The Avatar component comes in different sizes -</p>
+          <h3>Large -</h3>
+          <div id="large-Avatar" class="avatar-container">
+            <div class="avatar box-xxl">
+              <img src="/assets/images/user1.jpg" alt="" />
+            </div>
+            <div class="avatar box-xxl">K T</div>
+            <div class="avatar box-xxl">
+              <img src="/assets/images/user2.webp" alt="" />
+            </div>
+          </div>
+          <pre class="avatar-code">
+      &lt;div class=&quot;avatar box-xxl&quot;&gt;
+              &lt;img src=&quot;/assets/images/user1.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;avatar box-xxl&quot;&gt;K T&lt;/div&gt;
+            &lt;div class=&quot;avatar box-xxl&quot;&gt;
+              &lt;img src=&quot;/assets/images/user2.webp&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;</pre
+          >
 
-      <div class="alert alert-warning">
-        <div class="alert-content">
-          <div class="alert-icon"><i class="fas fa-skull-crossbones"></i></div>
-          <div>Seems your account is about expire, upgrade now</div>
-        </div>
-        <div class="cross-icon"><i class="fas fa-times"></i></div>
-      </div>
+          <h3>Medium -</h3>
+          <div id="medium-Avatar" class="avatar-container">
+            <div class="avatar box-xl">
+              <img src="/assets/images/user1.jpg" alt="" />
+            </div>
+            <div class="avatar box-xl">K T</div>
+            <div class="avatar box-xl">
+              <img src="/assets/images/user2.webp" alt="" />
+            </div>
+          </div>
+          <pre class="avatar-code">
+ &lt;div class=&quot;avatar box-xl&quot;&gt;
+    &lt;img src=&quot;/assets/images/user1.jpg&quot; alt=&quot;&quot; /&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;avatar box-xl&quot;&gt;
+  K T
+ &lt;/div&gt;
+ &lt;div class=&quot;avatar box-xl&quot;&gt;
+  &lt;img src=&quot;/assets/images/user2.webp&quot; alt=&quot;&quot; /&gt;
+ &lt;/div&gt;</pre
+          >
+          <h3>Small -</h3>
 
-      <div class="alert alert-success">
-        <div class="alert-content">
-          <div class="alert-icon"><i class="fas fa-check-circle"></i></div>
-          <div>Data uploaded to the server. Fire on!</div>
-        </div>
-        <div class="cross-icon"><i class="fas fa-times"></i></div>
-      </div>
-
-      <div class="alert alert-info">
-        <div class="alert-content">
-          <div class="alert-icon"><i class="fas fa-question"></i></div>
-          <div>Information will be Updated Soon!, Stay Active!</div>
-        </div>
-        <div class="cross-icon"><i class="fas fa-times"></i></div>
-      </div>
-    </div>
-
-    <h1>Badge :-</h1>
-    <div class="badge-container">
-      <div class="badge-wrapper">
-        <div class="badge badge-active"></div>
-        <div class="avatar box-xxl">
-          <img src="/assets/images/user1.jpg" alt="" />
-        </div>
-      </div>
-      <div class="badge-wrapper">
-        <div class="badge badge-inactive top-right">a</div>
-        <div class="avatar box-xxl">
-          <img src="/assets/images/user1.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="badge-wrapper">
-      <div class="badge badge-idle bottom-left"></div>
-      <div class="avatar box-xxl">
-        <img src="/assets/images/user1.jpg" alt="" />
-      </div>
-    </div>
-    <div class="badge-wrapper">
-      <div class="badge badge-idle bottom-right"></div>
-      <div class="badge-icon"><i class="fas fa-exclamation-circle"></i></div>
-    </div>
-
-    
-    <h1>Button :-</h1>
-
-    <div class="button-container">
-      <h4>Primary Button</h4>
-      <button class="btn btn-primary-pri">Primary</button>
-      <button class="btn btn-primary-sec">Secondary</button>
-      <button class="btn btn-primary-pos">Positive</button>
-      <button class="btn btn-primary-neg">Negative</button>
-
-      <h4>Link Button</h4>
-      <button class="btn btn-link-sm">Button</button>
-      <button class="btn btn-link-md">Button</button>
-      <button class="btn btn-link-lg">Button</button>
-      <button class="btn btn-link-xlg">Button</button>
-      <h4>Buttons Using Icon -</h4>
-      <button class="btn btn-icon-sm"><i class="fas fa-wifi"></i></button>
-      <button class="btn btn-icon-md"><i class="fas fa-sms"></i></button>
-      <button class="btn btn-icon-lg"><i class="fas fa-ice-cream"></i></button>
-      <button class="btn btn-icon-xlg"><i class="fas fa-gamepad"></i></button>
-      <!-- Floating Button -->
-      <button class="btn btn-floating-sm">Button</button>
-      <button class="btn btn-floating-md">Button</button>
-      <button class="btn btn-floating-lg">Button</button>
-      <button class="btn btn-floating-xlg">Button</button>
-      <h4></h4>
-    </div>
-
-    <!-- Cards Using Css -->
-    <h1>Cards :-</h1>
-    <div class="cards-container">
-      <div class="card card-user-id">
-        <div>
-          <img src="/assets/images/user1.jpg" alt="" style="width: 100%" />
-        </div>
-        <div class="card-description">
-          <h3><b>John Carter</b></h3>
-          <p>Software Engg & Web Developer</p>
-        </div>
-      </div>
-
-      <!-- card-with-text -->
-      <div class="card card-with-text">
-        <div class="card-description">
-          <h2 class="card-title">Lorem Ipsum :-</h2>
+          <div id="small-Avatar" class="avatar-container">
+            <div class="avatar box-m">
+              <img src="/assets/images/user1.jpg" alt="" />
+            </div>
+            <div class="avatar box-m">K T</div>
+            <div class="avatar box-m">
+              <img src="/assets/images/user2.webp" alt="" />
+            </div>
+          </div>
+          <pre class="avatar-code">
+ &lt;div class=&quot;avatar box-m&quot;&gt;
+     &lt;img src=&quot;/assets/images/user1.jpg&quot; alt=&quot;&quot; /&gt;
+ &lt;/div&gt;
+&lt;div class=&quot;avatar box-m&quot;&gt;K T&lt;/div&gt;
+&lt;div class=&quot;avatar box-m&quot;&gt;
+  &lt;img src=&quot;/assets/images/user2.webp&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+          </pre>
+        </section>
+        <hr />
+        <section class="parent-section">
+          <h1>Alert :-</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            dolor nobis. Illum officia error, est libero, tempora unde sed sunt
-            accusantium nisi deserunt quae magni eligendi tempore? Ut, nesciunt
-            facere.
+            Alerts are used to communicate a state that affects a system,
+            feature or page.
           </p>
-        </div>
-      </div>
-      <!-- card-with-text --and-badge-->
+          <div class="alert alert-success">
+            <div class="alert-content">
+              <div class="alert-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div>
+                Application submitted! Thanks for submitting your application.
+                Our team will get back to you soon.
+              </div>
+            </div>
+            <div class="cross-icon"><i class="fas fa-times"></i></div>
+          </div>
+          <h3><b> Status -</b></h3>
+          <p>Change the status of the alerts by passing the status prop.</p>
+          <h4 id="error-Alert">Error:</h4>
+          <div class="alert-container">
+            <div class="alert alert-error">
+              <div class="alert-content">
+                <div class="alert-icon">
+                  <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div>There was an error processing your request</div>
+              </div>
+              <div class="cross-icon"><i class="fas fa-times"></i></div>
+            </div>
+          </div>
 
-      <div class="card card-with-badge">
-        <div class="card-badge">Offer</div>
-        <div class="card-description">
-          <h2 class="card-title">Lorem Ipsum :-</h2>
-          <p class="card-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            dolor nobis. Illum officia error, est libero, tempora unde sed sunt
-            accusantium nisi deserunt quae magni eligendi tempore? Ut, nesciunt
-            facere.
-          </p>
-        </div>
-      </div>
-      <!-- card-with-dismiss -->
-      <div class="card card-with-dismiss">
-        <div class="close-cross">X</div>
-        <div class="card-description">
-          <h2 class="card-title">Lorem Ipsum :-</h2>
+          <pre class="avatar-code">
+            &lt;div class=&quot;alert alert-error&quot;&gt;
+              &lt;div class=&quot;alert-content&quot;&gt;
+                &lt;div class=&quot;alert-icon&quot;&gt;
+                  &lt;i class=&quot;fas fa-exclamation-circle&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div&gt;There was an error processing your request&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;cross-icon&quot;&gt;&lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          </pre>
+
+          <h4 id="warning--Alert">Warning:</h4>
+          <div class="alert-container">
+            <div class="alert alert-warning">
+              <div class="alert-content">
+                <div class="alert-icon">
+                  <i class="fas fa-skull-crossbones"></i>
+                </div>
+                <div>Seems your account is about expire, upgrade now</div>
+              </div>
+              <div class="cross-icon"><i class="fas fa-times"></i></div>
+            </div>
+          </div>
+          <pre class="avatar-code">
+            &lt;div class=&quot;alert alert-warning&quot;&gt;
+              &lt;div class=&quot;alert-content&quot;&gt;
+                &lt;div class=&quot;alert-icon&quot;&gt;
+                  &lt;i class=&quot;fas fa-skull-crossbones&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div&gt;Seems your account is about expire, upgrade now&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;cross-icon&quot;&gt;&lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            </pre
+          >
+
+          <h4 id="success-Alert">Success:</h4>
+          <div class="alert-container">
+            <div class="alert alert-success">
+              <div class="alert-content">
+                <div class="alert-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <div>Data uploaded to the server. Fire on!</div>
+              </div>
+              <div class="cross-icon"><i class="fas fa-times"></i></div>
+            </div>
+          </div>
+          <pre class="avatar-code">
+            &lt;div class=&quot;alert alert-success&quot;&gt;
+              &lt;div class=&quot;alert-content&quot;&gt;
+                &lt;div class=&quot;alert-icon&quot;&gt;
+                  &lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div&gt;Data uploaded to the server. Fire on!&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;cross-icon&quot;&gt;&lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            </pre
+          >
+
+          <h4 id="info-Alert">Info:</h4>
+          <div class="alert-container">
+            <div class="alert alert-info">
+              <div class="alert-content">
+                <div class="alert-icon"><i class="fas fa-question"></i></div>
+                <div>Information will be Updated Soon!, Stay Active!</div>
+              </div>
+              <div class="cross-icon"><i class="fas fa-times"></i></div>
+            </div>
+          </div>
+          <pre class="avatar-code">
+            &lt;div class=&quot;alert alert-info&quot;&gt;
+              &lt;div class=&quot;alert-content&quot;&gt;
+                &lt;div class=&quot;alert-icon&quot;&gt;&lt;i class=&quot;fas fa-question&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                &lt;div&gt;Information will be Updated Soon!, Stay Active!&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;cross-icon&quot;&gt;&lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            </pre
+          >
+        </section>
+        <hr />
+        <section class="parent-section">
+          <div class="badge-container">
+            <h1>Badge :-</h1>
+            <p>
+              Badges are used to highlight an item's status for quick
+              recognition.
+            </p>
+            <div class="badge-wrapper">
+              <div class="badge badge-active top-right"></div>
+              <div class="avatar box-xxl">
+                <img src="/assets/images/user1.jpg" alt="" />
+              </div>
+            </div>
+
+            <h3 id="Badge-on-Avatars-Badge">Badges on Avatar -</h3>
+            <h4>Active:</h4>
+            <div class="badge-wrapper">
+              <div class="badge badge-active"></div>
+              <div class="avatar box-xxl">
+                <img src="/assets/images/user1.jpg" alt="" />
+              </div>
+            </div>
+            <pre class="avatar-code">
+            &lt;div class=&quot;badge-wrapper&quot;&gt;
+              &lt;div class=&quot;badge badge-active&quot;&gt;&lt;/div&gt;
+              &lt;div class=&quot;avatar box-xxl&quot;&gt;
+                &lt;img src=&quot;/assets/images/user1.jpg&quot; alt=&quot;&quot; /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+
+            <h4>Inactive/Away:</h4>
+            <div class="badge-wrapper">
+              <div class="badge badge-inactive top-right">a</div>
+              <div class="avatar box-xxl">
+                <img src="/assets/images/user1.jpg" alt="" />
+              </div>
+            </div>
+            <pre class="avatar-code">
+            &lt;div class=&quot;badge-wrapper&quot;&gt;
+              &lt;div class=&quot;badge badge-inactive top-right&quot;&gt;a&lt;/div&gt;
+              &lt;div class=&quot;avatar box-xxl&quot;&gt;
+                &lt;img src=&quot;/assets/images/user1.jpg&quot; alt=&quot;&quot; /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+
+            <h4>Idle:</h4>
+            <div class="badge-wrapper">
+              <div class="badge badge-idle bottom-left"></div>
+              <div class="avatar box-xxl">
+                <img src="/assets/images/user1.jpg" alt="" />
+              </div>
+            </div>
+            <pre class="avatar-code">
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+              &lt;div class=&quot;badge badge-idle bottom-left&quot;&gt;&lt;/div&gt;
+              &lt;div class=&quot;avatar box-xxl&quot;&gt;
+                &lt;img src=&quot;/assets/images/user1.jpg&quot; alt=&quot;&quot; /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+            <h3 id="Badge-on-Icons--Badge">Badges on Icon -</h3>
+            <div class="badge-wrapper">
+              <div class="badge badge-idle bottom-right"></div>
+              <div class="badge-icon">
+                <i class="fas fa-exclamation-circle"></i>
+              </div>
+            </div>
+          </div>
+          <pre class="avatar-code">
+               &lt;div class=&quot;badge-wrapper&quot;&gt;
+              &lt;div class=&quot;badge badge-idle bottom-right&quot;&gt;&lt;/div&gt;
+              &lt;div class=&quot;badge-icon&quot;&gt;
+                &lt;i class=&quot;fas fa-exclamation-circle&quot;&gt;&lt;/i&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </pre>
+        </section>
+        <hr />
+        <section class="parent-section">
+          <h1>Button :-</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            dolor nobis. Illum officia error, est libero, tempora unde sed sunt
-            accusantium nisi deserunt quae magni eligendi tempore? Ut, nesciunt
-            facere.
+            The Button component is used to trigger an action or event, such as
+            submitting a form, opening a dialog, canceling an action, or
+            performing a delete operation.
           </p>
-        </div>
-      </div>
-       <!-- Card With Shadow -->
-     <div class="card card-shadow">
-        <div>
-          <h2 class="card-title">Lorem Ipsum :-</h2>
-          <p class="card-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            dolor nobis. Illum officia error, est libero, tempora unde sed sunt
-            accusantium nisi deserunt quae magni eligendi tempore? Ut, nesciunt
-            facere.
-          </p>
-        </div>
-      </div>
-    </div>
+          <div class="button-container">
+            <h4 id="Primary-Button">Primary Button:</h4>
+            <button class="btn btn-primary-pri">Primary</button>
+            <button class="btn btn-primary-sec">Secondary</button>
+            <button class="btn btn-primary-pos">Positive</button>
+            <button class="btn btn-primary-neg">Negative</button>
+            <pre class="avatar-code">
+            &lt;button class=&quot;btn btn-primary-pri&quot;&gt;Primary&lt;/button&gt;
+            &lt;button class=&quot;btn btn-primary-sec&quot;&gt;Secondary&lt;/button&gt;
+            &lt;button class=&quot;btn btn-primary-pos&quot;&gt;Positive&lt;/button&gt;
+            &lt;button class=&quot;btn btn-primary-neg&quot;&gt;Negative&lt;/button&gt;
+            </pre>
 
-      <!-- Horizontal Card -->
-      <div class="card card-horizontal">
-        <div>
-          <h2 class="card-title">Lorem Ipsum :-</h2>
-          <p class="card-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            dolor nobis. Illum officia error, est libero, tempora unde sed sunt
-            accusantium nisi deserunt quae magni eligendi tempore? Ut, nesciunt
-            facere.
+            <h4 id="Link-Button">Link Button:</h4>
+            <button class="btn btn-link-sm">Button</button>
+            <button class="btn btn-link-md">Button</button>
+            <button class="btn btn-link-lg">Button</button>
+            <button class="btn btn-link-xlg">Button</button>
+            <pre class="avatar-code">
+            &lt;button class=&quot;btn btn-link-sm&quot;&gt;Button&lt;/button&gt;
+            &lt;button class=&quot;btn btn-link-md&quot;&gt;Button&lt;/button&gt;
+            &lt;button class=&quot;btn btn-link-lg&quot;&gt;Button&lt;/button&gt;
+            &lt;button class=&quot;btn btn-link-xlg&quot;&gt;Button&lt;/button&gt;
+            </pre>
+
+            <h4 id="Icon-Button-Button">Buttons Using Icon:</h4>
+            <button class="btn btn-icon-sm"><i class="fas fa-wifi"></i></button>
+            <button class="btn btn-icon-md"><i class="fas fa-sms"></i></button>
+            <button class="btn btn-icon-lg">
+              <i class="fas fa-ice-cream"></i>
+            </button>
+            <button class="btn btn-icon-xlg">
+              <i class="fas fa-gamepad"></i>
+            </button>
+            <pre class="avatar-code">
+            &lt;button class=&quot;btn btn-icon-sm&quot;&gt;&lt;i class=&quot;fas fa-wifi&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;btn btn-icon-md&quot;&gt;&lt;i class=&quot;fas fa-sms&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;btn btn-icon-lg&quot;&gt;
+              &lt;i class=&quot;fas fa-ice-cream&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class=&quot;btn btn-icon-xlg&quot;&gt;
+              &lt;i class=&quot;fas fa-gamepad&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            </pre>
+
+            <!-- Floating Button -->
+            <h4>Floating action button:</h4>
+            <p>
+              Floating CTA can be found at bottom right corner of this page.
+            </p>
+            <button class="btn btn-floating-sm">Button</button>
+            <button class="btn btn-floating-md">Button</button>
+            <button class="btn btn-floating-lg">Button</button>
+            <button class="btn btn-floating-xlg">Button</button>
+            <pre class="avatar-code">
+            &lt;button class=&quot;btn btn-floating-sm&quot;&gt;Button&lt;/button&gt;
+            &lt;button class=&quot;btn btn-floating-md&quot;&gt;Button&lt;/button&gt;
+            &lt;button class=&quot;btn btn-floating-lg&quot;&gt;Button&lt;/button&gt;
+            &lt;button class=&quot;btn btn-floating-xlg&quot;&gt;Button&lt;/button&gt;
+            </pre>
+          </div>
+        </section>
+        <hr />
+        <section class="parent-section">
+          <h1 id="Cards-with-text-overlay-Cards">Cards :-</h1>
+          <p>
+            Cards are surfaces that display content and actions on a single
+            topic. They should be easy to scan for relevant and actionable
+            information. Elements, like text and images, should be placed on
+            them in a way that clearly indicates hierarchy.
           </p>
+          <div class="cards-container">
+            <h4 id="Cards-with-text-overlay-Cards">Card with Textovelay:</h4>
+            <div class="user-id-cards">
+              <div class="card-user-id">
+                <div class="image">
+                  <img src="/assets/images/iron-man.jpg" />
+                </div>
+                <div class="card-description">
+                  <h3><b>Iron Man:</b></h3>
+
+                  <p>
+                    Tony Stark is charismatic and eccentric, he is also very
+                    proud, but also very altruist and heroic. He did not have a
+                    good childhood, and this affects how he acts. Stark is very
+                    smart, and a very talented inventor.
+                  </p>
+                  <div class="user-btn-div">
+                    <button class="user-btn-1">Like</button>
+                    <button class="user-btn-2">Share</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre class="avatar-code">
+            &lt;div class=&quot;user-id-cards&quot;&gt;
+              &lt;div class=&quot;card-user-id&quot;&gt;
+                &lt;div class=&quot;image&quot;&gt;
+                  &lt;img src=&quot;/assets/images/iron-man.jpg&quot; /&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-description&quot;&gt;
+                  &lt;h3&gt;&lt;b&gt;Iron Man:&lt;/b&gt;&lt;/h3&gt;
+
+                  &lt;p&gt;
+                    Tony Stark is charismatic and eccentric, he is also very
+                    proud, but also very altruist and heroic. He did not have a
+                    good childhood, and this affects how he acts. Stark is very
+                    smart, and a very talented inventor.
+                  &lt;/p&gt;
+                  &lt;div class=&quot;user-btn-div&quot;&gt;
+                    &lt;button class=&quot;user-btn-1&quot;&gt;Like&lt;/button&gt;
+                    &lt;button class=&quot;user-btn-2&quot;&gt;Share&lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+
+            <!-- card-with-text -->
+            <h4 id="Text-only-cards-Cards">Text Only Card</h4>
+            <div class="card card-with-text">
+              <div class="card-description">
+                <h2 class="card-title">Lorem Ipsum :-</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum,
+                </p>
+              </div>
+            </div>
+            <pre class="avatar-code">
+&lt;div class=&quot;card card-with-text&quot;&gt;
+              &lt;div class=&quot;card-description&quot;&gt;
+                &lt;h2 class=&quot;card-title&quot;&gt;Lorem Ipsum :-&lt;/h2&gt;
+                &lt;p&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum,
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;            </pre
+            >
+
+            <!-- card-with-text --and-badge-->
+            <h4 id="Cards-with-badges-Cards">Card with Badge:</h4>
+            <div class="card card-with-badge">
+              <div class="card-badge">Offer</div>
+              <div class="card-description">
+                <h2 class="card-title">Lorem Ipsum :-</h2>
+                <p class="card-paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum,
+                </p>
+              </div>
+            </div>
+            <pre class="avatar-code">
+ &lt;div class=&quot;card card-with-badge&quot;&gt;
+              &lt;div class=&quot;card-badge&quot;&gt;Offer&lt;/div&gt;
+              &lt;div class=&quot;card-description&quot;&gt;
+                &lt;h2 class=&quot;card-title&quot;&gt;Lorem Ipsum :-&lt;/h2&gt;
+                &lt;p class=&quot;card-paragraph&quot;&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum,
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;            </pre
+            >
+
+            <!-- card-with-dismiss -->
+            <h4 id="Cards-with-dismiss-Cards">Card with Dismiss:</h4>
+            <div class="card card-with-dismiss">
+              <div class="close-cross">X</div>
+              <div class="card-description">
+                <h2 class="card-title">Lorem Ipsum :-</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum,
+                </p>
+              </div>
+            </div>
+            <pre class="avatar-code">
+            &lt;div class=&quot;card card-with-dismiss&quot;&gt;
+              &lt;div class=&quot;close-cross&quot;&gt;X&lt;/div&gt;
+              &lt;div class=&quot;card-description&quot;&gt;
+                &lt;h2 class=&quot;card-title&quot;&gt;Lorem Ipsum :-&lt;/h2&gt;
+                &lt;p&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum,
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+
+            <!-- Card With Shadow -->
+            <h4 id="Cards-with-shadow-Cards">Card with Shadow:</h4>
+
+            <div class="card card-shadow">
+              <div>
+                <h2 class="card-title">Lorem Ipsum :-</h2>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum,
+                </p>
+              </div>
+            </div>
+          </div>
+          <pre class="avatar-code">
+            &lt;div class=&quot;card card-shadow&quot;&gt;
+              &lt;div&gt;
+                &lt;h2 class=&quot;card-title&quot;&gt;Lorem Ipsum :-&lt;/h2&gt;
+                &lt;p class=&quot;card-description&quot;&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum,
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </pre>
+
+          <!-- Horizontal Card -->
+          <h4 id="Vertical/Horizontal-cards-Cards">
+            Vertical/Horizontal cards:
+          </h4>
+          <div class="card card-horizontal">
+            <div>
+              <h2 class="card-title">Lorem Ipsum :-</h2>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum, dolor nobis. Illum officia error, est libero, tempora
+                unde sed sunt accusantium nisi deserunt quae magni eligendi
+                tempore? Ut, nesciunt facere.
+              </p>
+            </div>
+          </div>
+          <pre class="avatar-code">
+&lt;div class=&quot;card card-horizontal&quot;&gt;
+            &lt;div&gt;
+              &lt;h2 class=&quot;card-title&quot;&gt;Lorem Ipsum :-&lt;/h2&gt;
+              &lt;p class=&quot;card-description&quot;&gt;
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum, dolor nobis. Illum officia error, est libero, tempora
+                unde sed sunt accusantium nisi deserunt quae magni eligendi
+                tempore? Ut, nesciunt facere.
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;          </pre>
+        </section>
+        <hr />
+<section id="responsive-Image" class="parent-section">
+        <!-- Images Using Html -->
+        <h1>Images :-</h1>
+        <div class="img-container">
+          <div  id="responsive-Image" class="img-res-parent">
+            <img class="img-responsive" src="/assets/images//img1.jpg" alt="" />
+          </div>
+          <div class="img-res-parent">
+            <img class="img-responsive" src="/assets/images//img1.jpg" alt="" />
+          </div>
+          <div class= img-res-parent">
+          <img class="img-responsive" src="/assets/images//img1.jpg" alt="" />
         </div>
       </div>
-    </div>
-   
-    <!-- Images Using Html -->
-    <h1>Images :-</h1>
-    <div class="img-container">
-      <div class="overflow-hidden rounded-s img-res-paren t">
-        <img class="img-responsive" src="/assets/images//img1.jpg" alt="" />
+      
+<pre class="avatar-code">
+&lt;div  id=&quot;responsive-Image&quot; class=&quot;img-res-parent&quot;&gt;
+            &lt;img class=&quot;img-responsive&quot; src=&quot;/assets/images//img1.jpg&quot; alt=&quot;&quot; /&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;img-res-parent&quot;&gt;
+            &lt;img class=&quot;img-responsive&quot; src=&quot;/assets/images//img1.jpg&quot; alt=&quot;&quot; /&gt;
+          &lt;/div&gt;
+          &lt;div class= img-res-parent&quot;&gt;
+          &lt;img class=&quot;img-responsive&quot; src=&quot;/assets/images//img1.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;/div&gt;</pre>
+        <hr/>
+      <div class="img-container">
+        <div  id="Rounded-Image" class="overflow-hidden rounded-m img-res-parent">
+          <img
+            height="100%"
+            width="100%"
+            src="/assets/images//img1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden rounded-l img-res-parent">
+          <img
+            height="100%"
+            width="100%"
+            src="/assets/images//img1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden rounded-xl img-res-parent">
+          <img
+            height="100%"
+            width="100%"
+            src="/assets/images//img1.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      
+<pre class="avatar-code">&lt;div class=&quot;img-container&quot;&gt;
+        &lt;div  id=&quot;Rounded-Image&quot; class=&quot;overflow-hidden rounded-m img-res-parent&quot;&gt;
+          &lt;img
+            height=&quot;100%&quot;
+            width=&quot;100%&quot;
+            src=&quot;/assets/images//img1.jpg&quot;
+            alt=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;overflow-hidden rounded-l img-res-parent&quot;&gt;
+          &lt;img
+            height=&quot;100%&quot;
+            width=&quot;100%&quot;
+            src=&quot;/assets/images//img1.jpg&quot;
+            alt=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;overflow-hidden rounded-xl img-res-parent&quot;&gt;
+          &lt;img
+            height=&quot;100%&quot;
+            width=&quot;100%&quot;
+            src=&quot;/assets/images//img1.jpg&quot;
+            alt=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;</pre>
+      </section>
       </div>
     </div>
-    
-
     <script src="app.js"></script>
   </body>
 </html>
