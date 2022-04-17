@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -197,9 +197,6 @@ pre {
   align-items: center;
   margin-right: var(--m);
 }
-.alert-container {
-  max-width: 500px;
-}
 
 .cross-icon {
   cursor: pointer;
@@ -221,56 +218,56 @@ pre {
   background-color: var(--success-bg);
   color: black;
 }
-  /* Badge */
+/* Badge */
 
-  .badge-wrapper {
-    width: max-content;
-    position: relative;
-  }
+.badge-wrapper {
+  width: max-content;
+  position: relative;
+}
 
-  .badge {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: var(--s);
-    height: var(--s);
-    border-radius: 50%;
-    border: 1px solid white;
-    background: cyan;
-    color: aliceblue;
-  }
-  .badge-active {
-    background: lightskyblue;
-  }
-  .badge-inactive {
-    background: red;
-  }
-  .badge-idle {
-    background: orange;
-  }
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: var(--s);
+  height: var(--s);
+  border-radius: 50%;
+  border: 1px solid white;
+  background: cyan;
+  color: aliceblue;
+}
+.badge-active {
+  background: lightskyblue;
+}
+.badge-inactive {
+  background: red;
+}
+.badge-idle {
+  background: orange;
+}
 
-  /* Badge-position */
-  .bottom-right {
-    bottom: 0;
-    right: -10px;
-  }
-  .bottom-left {
-    bottom: 0;
-    left: -10px;
-  }
-  .top-right {
-    top: 0;
-    right: -10px;
-  }
-  .top-left {
-    top: 0;
-    left: -10px;
-  }
+/* Badge-position */
+.bottom-right {
+  bottom: 0;
+  right: -10px;
+}
+.bottom-left {
+  bottom: 0;
+  left: -10px;
+}
+.top-right {
+  top: 0;
+  right: -10px;
+}
+.top-left {
+  top: 0;
+  left: -10px;
+}
 
-  .badge-icon {
-    font-size: var(--xxl);
-  }
+.badge-icon {
+  font-size: var(--xxl);
+}
 
 /* button */
 
@@ -289,6 +286,18 @@ pre {
   background-color: white;
   border-color: #2185d0;
   border-radius: 2px;
+}
+.btn-primary-pri-red {
+  padding: 0.2rem;
+  font-size: var(--s);
+  color: red;
+  background-color: white;
+  border-color: red;
+  border-radius: 2px;
+}
+.btn-primary-pri-red:hover {
+  color: white;
+  background-color: red;
 }
 .btn-primary-pri:hover {
   color: white;
@@ -689,4 +698,97 @@ pre {
 }
 .parent-section {
   padding: 1rem;
+}
+/* Model */
+
+.model-container {
+  display: flex;
+  flex-direction: column;
+}
+.model-alert {
+  box-shadow: 0 1px 20px grey;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  width: fit-content;
+  margin-bottom: 5rem;
+  margin-left: 20rem;
+  gap: 2rem;
+}
+.model-btn-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.model-title {
+  color: red;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.model-text {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+/* Rating */
+.rating-container {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+.star-rating {
+  border: solid 1px #ccc;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+  justify-content: space-around;
+  padding: 0 0.2em;
+  text-align: center;
+  width: 5em;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: rgb(235, 207, 207);
+  cursor: pointer;
+}
+
+.star-rating :checked ~ label {
+  color: rgb(255, 0, 0);
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: rgb(245, 7, 7);
+}
+
+/* Toast */
+.toast-container {
+  margin: 20rem;
+  background-color: rgb(75, 148, 221);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.toast-header {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  color: #6c757d;
+  background-color: rgba(2, 23, 39, 0.85);
+  background-clip: padding-box;
+  border-bottom: 1px solid rgba(233, 220, 220, 0.05);
+}
+.toast-box {
+  padding: 0.75rem;
+}
+.cross-icon {
+  margin-left: 23rem;
+}
+.toast-retry {
+  margin-left: 15rem;
+  border-radius: 1rem;
+  background-color: rgba(2, 23, 39, 0.85);
+  color: white;
 }
