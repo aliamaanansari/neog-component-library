@@ -1,24 +1,28 @@
-const sideBar = document.querySelector('.side-bar')
+const sideBar = document.querySelector(".side-bar")
 
 const navOptions = {
-  Avatar: ['large', 'medium', 'small'],
-  Alert: ['error', 'info', 'warning ', 'success'],
-  Badge: ['Badge on Avatars', 'Badge on Icons '],
-  Button: ['Primary', 'Link', 'Icon Button', 'Floating Action Button'],
+  Avatar: ["large", "medium", "small"],
+  Alert: ["error", "info", "warning ", "success"],
+  Badge: ["Badge on Avatars", "Badge on Icons "],
+  Button: ["Primary", "Link", "Icon Button", "Floating Action Button"],
   Cards: [
-    'Cards with text overlay',
-    'Text only cards',
-    'Cards with badges',
-    'Cards with dismiss',
-    'Cards with shadow',
-    'Vertical/Horizontal cards',
+    "Cards with text overlay",
+    "Text only cards",
+    "Cards with badges",
+    "Cards with dismiss",
+    "Cards with shadow",
+    "Vertical/Horizontal cards",
   ],
-  Image: ['responsive', 'Rounded'],
-  Input: ['Textbox', 'Validation and Error style'],
+  Image: ["responsive", "Rounded"],
+  Input: ["Textbox", "Validation and Error style"],
+  Model: ["Model"],
+  Rating: ["Rating"],
+  Toast: ["Toast"],
+  Grid: ["Grid-2: two items in a grid", "Grid-3: three items"],
 }
 
 const createNavbar = () => {
-  let output = ''
+  let output = ""
   Object.keys(navOptions).forEach((key) => {
     /*html*/
     output += `
@@ -33,10 +37,10 @@ const createNavbar = () => {
   return output
 }
 const createSubMenus = (menus = [], key) => {
-  let output = ''
+  let output = ""
   menus.forEach((item) => {
     /*html*/
-    output += `<a href="#${`${item}-${key}`.replace(/\s/g, '-')}">${item}</a>`
+    output += `<a href="#${`${item}-${key}`.replace(/\s/g, "-")}">${item}</a>`
   })
   return output
 }
