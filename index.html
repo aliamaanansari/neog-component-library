@@ -22,9 +22,26 @@
     />
   </head>
   <body>
-    <nav class="nav-bar">
-      <p><button>Home</button> <button>Docs</button></p>
-    </nav>
+     <nav class="navbar-main">
+              <div class="navbar-title">FastOne UI.</div>
+              <div class="navbar-search-input-container-main">
+                <div class="input-lefticon">
+                  <img src="./assets/images/search-icon.svg" alt="" />
+                </div>
+                <input
+                  class="navbar-search-input-main"
+                  type="text"
+                  placeholder="Search"
+                />
+              </div>
+              <div class="navbar-right-options-main">
+                <button  class="nav-btn">Home</button>
+                
+                <div class="flex-row items-center">
+                  <button class="nav-btn">Doc's</button>
+                </div>
+              </div>
+            </nav>
     <div class="main-div">
       <div class="side-bar">
         <!-- will be handled by js -->
@@ -708,8 +725,10 @@
         &lt;/div&gt;
       &lt;/div&gt;</pre>
       </section>
+    <hr/>
+      <section class="parent-section">
        <!-- Input -->
-        <h3 id="Textbox-Input">Input -</h3>
+        <h3 id="Textbox-Input">Input :-</h3>
         <p>
           The Input component is a component that is used to get user input in a
           text field.
@@ -740,11 +759,11 @@
 </pre>
         </div>
       </section>
-    </hr>
+    </?hr>
       
 <section class="parent-section">
   <!-- Model -->
-  <h3 class="Textbox-Input">Model-</h3>
+  <h3 class="Textbox-Input">Model :-</h3>
   <p>This Model Components is used for PopUps </p>
   <h4>Model Alert:</h4>
   <div class="model-container">
@@ -770,9 +789,9 @@
 </pre>
   </div></section>
 </hr>
-<section>
+<section class="parent-section">
   <!-- Rating -->
-  <H3 > Ratings -</H3>
+  <H3 > Ratings :-</H3>
   <p>This is Rating component</p>
   <div class="rating-container">
   <div class="star-rating">
@@ -807,9 +826,9 @@
 </section>
 <hr />
 
-<section>
+<section class="parent-section">
   <!-- Toast -->
-  <h3>Toast</h3>
+  <h3>Toast :-</h3>
   <p>This is Toast Component</p>
   <div class="toast-container">
     <div class="toast">
@@ -819,6 +838,122 @@
         <button class="toast-retry">Retry</button>
       </div>
     </div>
+  </div>
+  <pre class="avatar-code">
+  &lt;div class=&quot;star-rating&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;5-stars&quot; name=&quot;rating&quot; value=&quot;5&quot; /&gt;
+  &lt;label for=&quot;5-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;4-stars&quot; name=&quot;rating&quot; value=&quot;4&quot; /&gt;
+  &lt;label for=&quot;4-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;3-stars&quot; name=&quot;rating&quot; value=&quot;3&quot; /&gt;
+  &lt;label for=&quot;3-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;2-stars&quot; name=&quot;rating&quot; value=&quot;2&quot; /&gt;
+  &lt;label for=&quot;2-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;1-star&quot; name=&quot;rating&quot; value=&quot;1&quot; /&gt;
+  &lt;label for=&quot;1-star&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+&lt;/div&gt;
+
+</pre>
+</section>
+<hr/>
+<section class="parent-section">
+  <!-- Typography -->
+  <h3>TypoGraphy :-</h3>
+  <p>This is Typogrphy Component</p>
+  <div class="typography-container">
+<p class="heading-text-1">Heading text 1</p>
+<p class="heading-text-2">Heading text 2</p>
+<p class="heading-text-3">Heading text 3</p>
+<p class="heading-text-4">Heading text 4</p>
+<p class="small-text">Small text</p>
+<p class="grey-text">Gray Text</p>
+<p class="center-text"> Center Text</p>
+  </div>
+  <pre class="avatar-code">
+  &lt;div class=&quot;star-rating&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;5-stars&quot; name=&quot;rating&quot; value=&quot;5&quot; /&gt;
+  &lt;label for=&quot;5-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;4-stars&quot; name=&quot;rating&quot; value=&quot;4&quot; /&gt;
+  &lt;label for=&quot;4-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;3-stars&quot; name=&quot;rating&quot; value=&quot;3&quot; /&gt;
+  &lt;label for=&quot;3-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;2-stars&quot; name=&quot;rating&quot; value=&quot;2&quot; /&gt;
+  &lt;label for=&quot;2-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;1-star&quot; name=&quot;rating&quot; value=&quot;1&quot; /&gt;
+  &lt;label for=&quot;1-star&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+&lt;/div&gt;
+
+</pre>
+</section>  
+<section class="parent-section">
+<!-- List -->
+  <h3>List :-</h3>
+  <p>This is List Component</p>
+  <div class="List-container">
+<div class="list-circle-box"><ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul> <pre class="avatar-code">
+  &lt;div class=&quot;star-rating&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;5-stars&quot; name=&quot;rating&quot; value=&quot;5&quot; /&gt;
+  &lt;label for=&quot;5-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;4-stars&quot; name=&quot;rating&quot; value=&quot;4&quot; /&gt;
+  &lt;label for=&quot;4-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;3-stars&quot; name=&quot;rating&quot; value=&quot;3&quot; /&gt;
+  &lt;label for=&quot;3-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;2-stars&quot; name=&quot;rating&quot; value=&quot;2&quot; /&gt;
+  &lt;label for=&quot;2-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;1-star&quot; name=&quot;rating&quot; value=&quot;1&quot; /&gt;
+  &lt;label for=&quot;1-star&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+&lt;/div&gt;
+
+</pre></div>
+<div class="list-square-box">
+  <ul>
+  <li class="list-square-box">Item 1</li>
+  <li class="list-square-box">Item 2</li>
+  <li class="list-square-box">Item 3</li>
+</ul>
+<pre class="avatar-code">
+  &lt;div class=&quot;star-rating&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;5-stars&quot; name=&quot;rating&quot; value=&quot;5&quot; /&gt;
+  &lt;label for=&quot;5-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;4-stars&quot; name=&quot;rating&quot; value=&quot;4&quot; /&gt;
+  &lt;label for=&quot;4-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;3-stars&quot; name=&quot;rating&quot; value=&quot;3&quot; /&gt;
+  &lt;label for=&quot;3-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;2-stars&quot; name=&quot;rating&quot; value=&quot;2&quot; /&gt;
+  &lt;label for=&quot;2-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;1-star&quot; name=&quot;rating&quot; value=&quot;1&quot; /&gt;
+  &lt;label for=&quot;1-star&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+&lt;/div&gt;
+
+</pre>
+</div>
+<div class="list-upper-roman-box">
+  <ol>
+  <li class="list-upper-roman-box">Item 1</li>
+  <li class="list-upper-roman-box">Item 2</li>
+  <li class="list-upper-roman-box">Item 3</li>
+</ol>
+<pre class="avatar-code">
+  &lt;div class=&quot;star-rating&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;5-stars&quot; name=&quot;rating&quot; value=&quot;5&quot; /&gt;
+  &lt;label for=&quot;5-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;4-stars&quot; name=&quot;rating&quot; value=&quot;4&quot; /&gt;
+  &lt;label for=&quot;4-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;3-stars&quot; name=&quot;rating&quot; value=&quot;3&quot; /&gt;
+  &lt;label for=&quot;3-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;2-stars&quot; name=&quot;rating&quot; value=&quot;2&quot; /&gt;
+  &lt;label for=&quot;2-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;1-star&quot; name=&quot;rating&quot; value=&quot;1&quot; /&gt;
+  &lt;label for=&quot;1-star&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+&lt;/div&gt;
+
+</pre>
+</div>
+
   </div>
 </section>
 
